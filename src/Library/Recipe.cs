@@ -33,6 +33,21 @@ namespace Full_GRASP_And_SOLID.Library
                 Console.WriteLine($"{step.Quantity} de '{step.Input.Description}' " +
                     $"usando '{step.Equipment.Description}' durante {step.Time}");
             }
+             Console.WriteLine($"El costo total de produccion es {TotaltoPay}:");
+
+        }
+        public double TotaltoPay
+        {
+            get
+            {
+                double result = 0;
+                foreach (Step item in this.steps)
+                {
+                    result = result + item.Total(); 
+                }
+                return result;
+            }
         }
     }
 }
+/* La clase Recipe es la encargada de realizar el calculo del total de produccion*/
