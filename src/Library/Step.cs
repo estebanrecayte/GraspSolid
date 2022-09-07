@@ -41,4 +41,6 @@ namespace Full_GRASP_And_SOLID.Library
         }
     }
 }
+/* La clase Step tambien cumple con el patron Expert y principio SRP. */
+
     

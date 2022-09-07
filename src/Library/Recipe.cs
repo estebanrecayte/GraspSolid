@@ -50,4 +50,7 @@ namespace Full_GRASP_And_SOLID.Library
         }
     }
 }
-/* La clase Recipe es la encargada de realizar el calculo del total de produccion*/
+/* La clase Recipe es la encargada de realizar el calculo del total de produccion.
+Patron Expert y principio SRP posee la información necesaria para cumplir con el programa.
+
+*/
